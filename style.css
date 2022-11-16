@@ -6,5 +6,30 @@
   body {
     font-family: "Inter", sans-serif;
     font-size: 15px;
+    @apply bg-offWhite;
+  }
+}
+
+@layer components {
+  .logo {
+    @apply transition duration-300 ease-in-out;
+    @apply hover:scale-110;
+  }
+
+  .navItem {
+    @apply flex;
+  }
+
+  .navLink {
+    @apply py-2 px-2;
+    @apply text-veryDarkBlue capitalize;
+    @apply transition duration-300 ease-in-out;
+    @apply hover:text-softRed;
+  }
+}
+
+@layer utilities {
+  * {
+    outline: 1px solid blue;
   }
 }
