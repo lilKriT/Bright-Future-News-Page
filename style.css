@@ -26,6 +26,23 @@
     @apply transition duration-300 ease-in-out;
     @apply hover:text-softRed;
   }
+
+  /* Main Grid */
+  .mainGrid {
+    @apply grid grid-cols-3 grid-rows-3;
+  }
+
+  .sideNews {
+    @apply row-span-2 px-6 py-8 bg-veryDarkBlue text-grayishBlue;
+  }
+
+  .sideNews h2 {
+    @apply text-softOrange;
+  }
+
+  .sideNews h3 {
+    @apply text-offWhite;
+  }
 }
 
 @layer utilities {
