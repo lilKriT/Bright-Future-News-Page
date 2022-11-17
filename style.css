@@ -37,16 +37,23 @@
   }
 
   .sideNews h2 {
-    @apply text-softOrange;
+    @apply text-softOrange text-4xl font-bold;
   }
 
+  .sideNews article {
+    @apply border-t border-darkGrayishBlue;
+  }
+
+  .sideNews article:first-of-type {
+    @apply border-t-0;
+  }
   .sideNews h3 {
-    @apply text-offWhite;
+    @apply text-offWhite text-xl font-bold;
   }
 }
 
 @layer utilities {
   * {
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
   }
 }
