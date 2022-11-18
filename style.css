@@ -56,6 +56,10 @@
     @apply hover:bg-veryDarkBlue;
     @apply uppercase text-white tracking-[4px];
   }
+
+  .latestArticle {
+    @apply flex;
+  }
 }
 
 @layer utilities {
