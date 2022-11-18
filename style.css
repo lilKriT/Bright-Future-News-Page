@@ -50,6 +50,12 @@
   .sideNews h3 {
     @apply text-offWhite text-xl font-bold;
   }
+
+  .redLink {
+    @apply bg-softRed px-4 py-2 transition duration-300 ease-in-out;
+    @apply hover:bg-veryDarkBlue;
+    @apply uppercase text-white tracking-[4px];
+  }
 }
 
 @layer utilities {
