@@ -30,6 +30,8 @@
   /* Main Grid */
   .mainGrid {
     @apply grid grid-cols-3 grid-rows-3;
+    /* I think this is better */
+    /* grid-template-rows: 1fr auto auto; */
   }
 
   .sideNews {
@@ -59,6 +61,23 @@
 
   .latestArticle {
     @apply flex;
+  }
+
+  .latestArticle img {
+    @apply h-36;
+    aspect-ratio: 0.78;
+  }
+
+  .laContent {
+    @apply flex flex-col justify-between;
+  }
+
+  .laContent h2 {
+    @apply flex flex-col;
+  }
+
+  .laContent h2 span {
+    @apply text-4xl text-grayishBlue font-bold;
   }
 }
 
