@@ -69,11 +69,11 @@
   }
 
   .laContent {
-    @apply flex flex-col justify-between;
+    @apply flex flex-col justify-between text-darkGrayishBlue;
   }
 
   .laContent h2 {
-    @apply flex flex-col;
+    @apply flex flex-col text-lg font-extrabold text-veryDarkBlue;
   }
 
   .laContent h2 span {
@@ -83,6 +83,6 @@
 
 @layer utilities {
   * {
-    /* outline: 1px solid blue; */
+    outline: 1px solid blue;
   }
 }
