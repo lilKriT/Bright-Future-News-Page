@@ -31,7 +31,7 @@
   .mainGrid {
     @apply grid grid-cols-3 grid-rows-3;
     /* I think this is better */
-    /* grid-template-rows: 1fr auto auto; */
+    grid-template-rows: 1fr 1fr auto;
   }
 
   .sideNews {
