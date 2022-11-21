@@ -31,9 +31,10 @@
   .mainGrid {
     @apply grid grid-cols-3 grid-rows-3;
     /* I think this is better */
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-rows: 1fr auto auto;
   }
 
+  /* Side news */
   .sideNews {
     @apply row-span-2 px-6 py-8 bg-veryDarkBlue text-grayishBlue;
   }
@@ -53,30 +54,32 @@
     @apply text-offWhite text-xl font-bold;
   }
 
+  /* Button */
   .redLink {
     @apply bg-softRed px-4 py-2 transition duration-300 ease-in-out;
     @apply hover:bg-veryDarkBlue;
     @apply uppercase text-white tracking-[4px];
   }
 
+  /* Latest articles */
   .latestArticle {
-    @apply flex;
+    @apply flex gap-6;
   }
 
   .latestArticle img {
-    @apply h-36;
-    aspect-ratio: 0.78;
+    @apply w-1/3;
+    @apply object-cover;
   }
 
   .laContent {
     @apply flex flex-col justify-between text-darkGrayishBlue;
   }
 
-  .laContent h2 {
+  .laHeader {
     @apply flex flex-col text-lg font-extrabold text-veryDarkBlue;
   }
 
-  .laContent h2 span {
+  .laNumber {
     @apply text-4xl text-grayishBlue font-bold;
   }
 }
