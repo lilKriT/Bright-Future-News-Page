@@ -59,7 +59,7 @@
     </header>
 
     <!-- Main content -->
-    <main class="flex flex-col items-center">
+    <main class="flex flex-col items-center px-4">
       <!-- Wrapper -->
       <div class="mainGrid gap-8 w-full max-w-6xl pb-12">
         <!-- Main Image -->
@@ -68,26 +68,30 @@
         </div>
 
         <!-- Side news -->
-        <div class="sideNews">
+        <div class="sideNews flex flex-col">
           <h2>New</h2>
-          <article>
-            <h3>Hydrogen VS Electric Cars</h3>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-          </article>
-          <article>
-            <h3>The Downsides of AI Artistry</h3>
-            <p>
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </article>
-          <article>
-            <h3>Is VC Funding Drying Up?</h3>
-            <p>
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </article>
+          <div class="flex flex-col justify-between grow">
+            <article class="sideArticle">
+              <h3 class="saHeader">Hydrogen VS Electric Cars</h3>
+              <p class="saContent">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </article>
+            <article class="sideArticle">
+              <h3 class="saHeader">The Downsides of AI Artistry</h3>
+              <p class="saContent">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </article>
+            <article class="sideArticle">
+              <h3 class="saHeader">Is VC Funding Drying Up?</h3>
+              <p class="saContent">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </article>
+          </div>
         </div>
 
         <!-- Title -->
