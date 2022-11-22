@@ -30,9 +30,9 @@
 
   /* Main Grid */
   .mainGrid {
-    @apply grid grid-cols-3 grid-rows-3;
+    @apply grid grid-cols-3 grid-rows-3 gap-8;
     /* I think this is better */
-    grid-template-rows: 1fr auto auto;
+    grid-template-rows: 17.5rem auto auto;
   }
 
   /* Side news */
@@ -41,7 +41,7 @@
   }
 
   .sideNews h2 {
-    @apply text-softOrange text-4xl font-bold mb-8;
+    @apply text-softOrange text-4xl font-bold;
   }
 
   .sideArticle {
