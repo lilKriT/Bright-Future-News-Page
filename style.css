@@ -53,6 +53,7 @@
   }
   .sideNews h3 {
     @apply text-offWhite text-xl font-bold;
+    @apply hover:text-softOrange transition duration-150 ease-in-out;
   }
 
   /* Button */
@@ -67,8 +68,8 @@
     @apply flex gap-6;
   }
 
-  .latestArticle img {
-    @apply w-1/3;
+  .laImage {
+    @apply w-1/3 h-32;
     @apply object-cover;
   }
 
@@ -78,6 +79,7 @@
 
   .laHeader {
     @apply flex flex-col text-lg font-extrabold text-veryDarkBlue;
+    @apply hover:text-softRed transition duration-150 ease-in-out;
   }
 
   .laNumber {
