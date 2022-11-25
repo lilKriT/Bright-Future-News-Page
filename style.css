@@ -35,7 +35,7 @@
 
   /* Main Grid */
   .mainGrid {
-    @apply grid grid-cols-3 grid-rows-3 gap-8;
+    @apply grid grid-cols-mobile lg:grid-cols-desktop grid-rows-3 gap-8;
     /* I think this is better */
     grid-template-rows: 17.5rem auto auto;
   }
@@ -99,6 +99,6 @@
 
 @layer utilities {
   * {
-    /* outline: 1px solid blue; */
+    outline: 1px solid blue;
   }
 }

@@ -13,6 +13,14 @@ module.exports = {
         darkGrayishBlue: "hsl(236, 13%, 42%)",
         veryDarkBlue: "hsl(240, 100%, 5%)",
       },
+      gridTemplateColumns: {
+        desktop: "repeat(3, minmax(0, 1fr))",
+        mobile: "1fr",
+      },
+      gridTemplateRows: {
+        desktop: "17.5rem auto auto",
+        mobile: "1fr",
+      },
     },
   },
   plugins: [],
