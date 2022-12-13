@@ -64,7 +64,7 @@
   }
 
   .saContent {
-    @apply mt-2;
+    @apply mt-2 mb-6;
   }
 
   /* Button */
@@ -100,6 +100,6 @@
 
 @layer utilities {
   * {
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
   }
 }
