@@ -64,11 +64,18 @@
       <div class="mainGrid">
         <!-- Main Image -->
         <div class="lg:col-span-2">
-          <img
-            src="image-web-3-desktop.jpg"
-            alt="Web 3.0"
-            class="h-full w-full object-cover"
-          />
+          <picture>
+            <source
+              srcset="image-web-3-desktop.jpg"
+              media="(min-width: 1024px)"
+              class="h-full w-full object-cover"
+            />
+            <img
+              src="image-web-3-mobile.jpg"
+              alt="Web 3.0"
+              class="h-full w-full object-cover"
+            />
+          </picture>
         </div>
 
         <!-- Title -->
