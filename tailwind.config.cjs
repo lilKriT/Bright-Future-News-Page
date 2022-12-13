@@ -21,6 +21,9 @@ module.exports = {
         desktop: "17.5rem auto auto",
         mobile: "1fr",
       },
+      boxShadow: {
+        tint: "inset 0 0 0 100vmax rgb(0 0 0 / .5)",
+      },
     },
   },
   plugins: [],
