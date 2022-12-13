@@ -1,5 +1,12 @@
 import "./style.css";
 
+const mobileMenu = document.querySelector("#mobileMenu");
+const closeMobileMenu = document.querySelector("#closeMobileMenu");
+
+closeMobileMenu.addEventListener("click", () => {
+  mobileMenu.classList.add("invisible");
+});
+
 // document.querySelector("#app").innerHTML = `
 //   <div>
 //   Home
