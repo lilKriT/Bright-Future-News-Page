@@ -1,10 +1,17 @@
 import "./style.css";
 
 const mobileMenu = document.querySelector("#mobileMenu");
+const openMobileMenu = document.querySelector("#openMobileMenu");
 const closeMobileMenu = document.querySelector("#closeMobileMenu");
+
+openMobileMenu.addEventListener("click", () => {
+  mobileMenu.classList.add("visible");
+  mobileMenu.classList.remove("invisible");
+});
 
 closeMobileMenu.addEventListener("click", () => {
   mobileMenu.classList.add("invisible");
+  mobileMenu.classList.remove("visible");
 });
 
 // document.querySelector("#app").innerHTML = `

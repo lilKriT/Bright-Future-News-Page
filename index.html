@@ -38,7 +38,7 @@
         </a>
 
         <!-- Links -->
-        <menu class="flex flex-row gap-2 -mr-2">
+        <menu class="flex flex-row gap-2 -mr-2 invisible lg:visible">
           <li class="navItem">
             <a href="#" class="navLink" tabindex="0">Home</a>
           </li>
@@ -55,11 +55,24 @@
             <a href="#" class="navLink" tabindex="0">Categories</a>
           </li>
         </menu>
+
+        <!-- Mobile Menu Button -->
+        <button id="openMobileMenu">
+          <img
+            src="/icon-menu.svg"
+            alt="Open mobile menu"
+            width="40"
+            height="17"
+          />
+        </button>
       </nav>
     </header>
 
     <!-- Mobile Menu -->
-    <div class="fixed shadow-tint inset-0 flex justify-end" id="mobileMenu">
+    <div
+      class="fixed shadow-tint inset-0 flex justify-end invisible"
+      id="mobileMenu"
+    >
       <div class="bg-white min-w-[20rem] flex flex-col px-6 py-10">
         <button class="self-end" id="closeMobileMenu">
           <img
