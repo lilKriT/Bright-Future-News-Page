@@ -80,7 +80,7 @@
   }
 
   .laImage {
-    @apply w-1/3 h-32;
+    @apply w-24 h-32;
     @apply object-cover;
   }
 
