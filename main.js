@@ -3,17 +3,26 @@ import { throttle } from "lodash";
 
 // Opening and closing the menu
 const mobileMenu = document.querySelector("#mobileMenu");
+const mobileMenuLinks = document.querySelector("#mobileMenu > div");
 const openMobileMenu = document.querySelector("#openMobileMenu");
 const closeMobileMenu = document.querySelector("#closeMobileMenu");
 
 openMobileMenu.addEventListener("click", () => {
   mobileMenu.classList.add("visible");
   mobileMenu.classList.remove("invisible");
+  mobileMenu.classList.add("opacity-100");
+  mobileMenu.classList.remove("opacity-0");
+  mobileMenuLinks.classList.add("scale-x-100");
+  mobileMenuLinks.classList.remove("scale-x-0");
 });
 
 closeMobileMenu.addEventListener("click", () => {
   mobileMenu.classList.add("invisible");
   mobileMenu.classList.remove("visible");
+  mobileMenu.classList.add("opacity-0");
+  mobileMenu.classList.remove("opacity-100");
+  mobileMenuLinks.classList.add("scale-x-0");
+  mobileMenuLinks.classList.remove("scale-x-100");
 });
 
 // Shrinking the navbar
