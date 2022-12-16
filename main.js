@@ -1,5 +1,6 @@
 import "./style.css";
 
+// Opening and closing the menu
 const mobileMenu = document.querySelector("#mobileMenu");
 const openMobileMenu = document.querySelector("#openMobileMenu");
 const closeMobileMenu = document.querySelector("#closeMobileMenu");
@@ -12,6 +13,20 @@ openMobileMenu.addEventListener("click", () => {
 closeMobileMenu.addEventListener("click", () => {
   mobileMenu.classList.add("invisible");
   mobileMenu.classList.remove("visible");
+});
+
+// Shrinking the navbar
+const header = document.querySelector("header > nav");
+document.addEventListener("scroll", (e) => {
+  let pixelsFromTop = Math.round(window.scrollY);
+  console.log(pixelsFromTop);
+  if (pixelsFromTop > 50) {
+    header.classList.remove("mt-12");
+    header.classList.add("mt-2");
+  } else {
+    header.classList.remove("mt-2");
+    header.classList.add("mt-12");
+  }
 });
 
 // document.querySelector("#app").innerHTML = `
