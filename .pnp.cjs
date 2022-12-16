@@ -29,6 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["autoprefixer", "virtual:c57e56d4d0d581dc1fba64789bec7df1ddf4f58f6b23536535d0ce0130c6710097211a7f21b741bc04baa0c4b400cb15e4f47e96e5ac76f701755aa1c24390dc#npm:10.4.13"],\
+            ["lodash", "npm:4.17.21"],\
             ["postcss", "npm:8.4.19"],\
             ["tailwindcss", "virtual:c57e56d4d0d581dc1fba64789bec7df1ddf4f58f6b23536535d0ce0130c6710097211a7f21b741bc04baa0c4b400cb15e4f47e96e5ac76f701755aa1c24390dc#npm:3.2.4"],\
             ["vite", "virtual:c57e56d4d0d581dc1fba64789bec7df1ddf4f58f6b23536535d0ce0130c6710097211a7f21b741bc04baa0c4b400cb15e4f47e96e5ac76f701755aa1c24390dc#npm:3.2.4"]\
@@ -327,6 +328,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["bright-future-news-page", "workspace:."],\
             ["autoprefixer", "virtual:c57e56d4d0d581dc1fba64789bec7df1ddf4f58f6b23536535d0ce0130c6710097211a7f21b741bc04baa0c4b400cb15e4f47e96e5ac76f701755aa1c24390dc#npm:10.4.13"],\
+            ["lodash", "npm:4.17.21"],\
             ["postcss", "npm:8.4.19"],\
             ["tailwindcss", "virtual:c57e56d4d0d581dc1fba64789bec7df1ddf4f58f6b23536535d0ce0130c6710097211a7f21b741bc04baa0c4b400cb15e4f47e96e5ac76f701755aa1c24390dc#npm:3.2.4"],\
             ["vite", "virtual:c57e56d4d0d581dc1fba64789bec7df1ddf4f58f6b23536535d0ce0130c6710097211a7f21b741bc04baa0c4b400cb15e4f47e96e5ac76f701755aa1c24390dc#npm:3.2.4"]\
@@ -1177,6 +1179,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/lilconfig-npm-2.0.6-6231346eaf-40a3cd72f1.zip/node_modules/lilconfig/",\
           "packageDependencies": [\
             ["lilconfig", "npm:2.0.6"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lodash", [\
+        ["npm:4.17.21", {\
+          "packageLocation": "./.yarn/cache/lodash-npm-4.17.21-6382451519-eb835a2e51.zip/node_modules/lodash/",\
+          "packageDependencies": [\
+            ["lodash", "npm:4.17.21"]\
           ],\
           "linkType": "HARD"\
         }]\

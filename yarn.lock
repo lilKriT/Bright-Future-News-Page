@@ -250,6 +250,7 @@ __metadata:
   resolution: "bright-future-news-page@workspace:."
   dependencies:
     autoprefixer: ^10.4.13
+    lodash: ^4.17.21
     postcss: ^8.4.19
     tailwindcss: ^3.2.4
     vite: ^3.2.3
@@ -1024,6 +1025,13 @@ __metadata:
   version: 2.0.6
   resolution: "lilconfig@npm:2.0.6"
   checksum: 40a3cd72f103b1be5975f2ac1850810b61d4053e20ab09be8d3aeddfe042187e1ba70b4651a7e70f95efa1642e7dc8b2ae395b317b7d7753b241b43cef7c0f7d
+  languageName: node
+  linkType: hard
+
+"lodash@npm:^4.17.21":
+  version: 4.17.21
+  resolution: "lodash@npm:4.17.21"
+  checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
   languageName: node
   linkType: hard
 

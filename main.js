@@ -1,4 +1,5 @@
 import "./style.css";
+import { throttle } from "lodash";
 
 // Opening and closing the menu
 const mobileMenu = document.querySelector("#mobileMenu");
@@ -17,17 +18,20 @@ closeMobileMenu.addEventListener("click", () => {
 
 // Shrinking the navbar
 const header = document.querySelector("header > nav");
-document.addEventListener("scroll", (e) => {
-  let pixelsFromTop = Math.round(window.scrollY);
-  console.log(pixelsFromTop);
-  if (pixelsFromTop > 50) {
-    header.classList.remove("mt-12");
-    header.classList.add("mt-2");
-  } else {
-    header.classList.remove("mt-2");
-    header.classList.add("mt-12");
-  }
-});
+document.addEventListener(
+  "scroll",
+  throttle((e) => {
+    let pixelsFromTop = Math.round(window.scrollY);
+    console.log(pixelsFromTop);
+    if (pixelsFromTop > 50) {
+      header.classList.remove("mt-12");
+      header.classList.add("mt-2");
+    } else {
+      header.classList.remove("mt-2");
+      header.classList.add("mt-12");
+    }
+  }, 250)
+);
 
 // document.querySelector("#app").innerHTML = `
 //   <div>
